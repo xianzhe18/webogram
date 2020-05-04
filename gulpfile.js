@@ -312,7 +312,7 @@ gulp.task('watchhtml', function () {
 gulp.task('server', function (done) {
   http.createServer(
     st({ path: __dirname, index: 'index.html', cache: false })
-  ).listen(8000, done)
+  ).listen(80, done)
 })
 
 gulp.task('watch', gulp.series(gulp.parallel('server', 'less'), function () {
